@@ -25,6 +25,7 @@ public class ObjetoRemoto extends UnicastRemoteObject implements InterfaceRemota
         return perimetro * apotema/2;
     }
     
+    /*
     @Override
     public void areaPoligonoIrregular(double lado, double distanciaCentro) throws RemoteException{
         lados.add(lado);
@@ -42,5 +43,5 @@ public class ObjetoRemoto extends UnicastRemoteObject implements InterfaceRemota
         }
         return area;
     }
-    
+    */
 } 
