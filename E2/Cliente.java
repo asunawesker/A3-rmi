@@ -50,20 +50,24 @@ public class Cliente {
                     break;
                 /*
                 case 3:
-                    System.out.println("\nArea del poligono regular\nIngrese el numero de lados");
-                    int numLado = scanner.nextInt();
-                    double lados;
-                    double distCentro;
+                    List<double> X = ArrayList<>();
+                    List<double> Y = ArrayList<>();
+                    int lados;
 
-                    for(int i = 0; i < numLado; i++){
-                        System.out.println("Ingrese la longitud del lado");
-                        lados = scanner.nextDouble();
-                        System.out.println("Ingrese la distancia entre el centro y el lado");
-                        distCentro = scanner.nextDouble();
-                        objetoRemoto.areaPoligonoIrregular(lados,distCentro);
+                    System.out.println("\nIngresa el no. de lados");
+                    lados = scanner.nextInt();
+
+                    for(int i=0; i<lados; i++){
+                        System.out.println("\nIngresa la coordenada en X el vertice "+(i+1));
+                        double x = scanner.nextDouble();
+                        System.out.println("\nIngresa la coordenada en Y el vertice "+(i+1));
+                        double y = scanner.nextDouble();
+
+                        X.add(x);
+                        Y.add(Y);
                     }
 
-                    System.out.println("Area: " + objetoRemoto.calAreaPoligonoIrr());
+                    System.out.print("La area del poligono irregular es :"+df.format(objetoRemoto.areaPoligonoRegular(X, Y, lados)));
                     break;
                 */
                 default:
