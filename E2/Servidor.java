@@ -10,7 +10,10 @@ public class Servidor {
                 "java.rmi.server.codebase", 
                 "25.72.27.24"
             );
-
+            System.setProperty(
+                "java.rmi.server.hostname",
+                "25.72.27.24"
+            );
             InterfaceRemota objetoRemoto = new ObjetoRemoto();
             Naming.rebind("//25.72.27.24/ObjetoRemoto", objetoRemoto);
             System.out.println("Iniciando server...");
