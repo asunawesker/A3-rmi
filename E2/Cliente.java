@@ -21,7 +21,7 @@ public class Cliente {
             System.out.println("Elige una opcion para calcular su area:");
             System.out.println("1... Calcular área circulo");
             System.out.println("2... Calcular área póligono regular");
-            //System.out.print("3... Calcular area Poligono Irregular");
+            System.out.println("3... Calcular area Poligono Irregular");
 
             System.out.print("Elige una opción: ");
             opcionFigura = scanner.nextInt();
@@ -48,28 +48,26 @@ public class Cliente {
                     System.out.println("\nLa area del poligono regular es : "+df.format(objetoRemoto.areaPoligonoRegular(perimetro, apotema)));
                     
                     break;
-                /*
+                
                 case 3:
-                    List<double> X = ArrayList<>();
-                    List<double> Y = ArrayList<>();
                     int lados;
 
-                    System.out.println("\nIngresa el no. de lados");
+                    System.out.print("\nIngresa el no. de lados: ");
                     lados = scanner.nextInt();
-
+                    System.out.println("");
                     for(int i=0; i<lados; i++){
-                        System.out.println("\nIngresa la coordenada en X el vertice "+(i+1));
-                        double x = scanner.nextDouble();
-                        System.out.println("\nIngresa la coordenada en Y el vertice "+(i+1));
-                        double y = scanner.nextDouble();
+                        System.out.print("Ingresa la coordenada en X el vertice "+(i+1)+": ");
+                        Double x = scanner.nextDouble();
+                        System.out.print("Ingresa la coordenada en Y el vertice "+(i+1)+": ");
+                        Double y = scanner.nextDouble();
 
-                        X.add(x);
-                        Y.add(Y);
+                        objetoRemoto.verticesPoligonoIrregular(x, y);
+                        System.out.println("");
                     }
 
-                    System.out.print("La area del poligono irregular es :"+df.format(objetoRemoto.areaPoligonoRegular(X, Y, lados)));
+                    System.out.print("La area del poligono irregular es :"+df.format(objetoRemoto.areaPoligonoIrregular(lados)));
                     break;
-                */
+                    
                 default:
                      System.out.printf("Opción inválida");
             }
